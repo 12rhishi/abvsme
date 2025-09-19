@@ -302,3 +302,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Add this new block of code to your script.js file
+
+// Listen for the pageshow event, which fires when a page is loaded from the cache
+window.addEventListener('pageshow', function(event) {
+    // Check if the page is being loaded from the back-forward cache
+    if (event.persisted) {
+        // If it is, re-apply the page-transition-in class to trigger the fade-in animation
+        document.body.classList.remove('page-transition-out');
+        document.body.classList.add('page-transition-in');
+    }
+});
