@@ -279,38 +279,3 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-document.addEventListener('DOMContentLoaded', function() {
-    // This adds the fade-in class to the body when a page is loaded
-    document.body.classList.add('page-transition-in');
-
-    // Select all internal links on the page that don't have a special attribute
-    const pageLinks = document.querySelectorAll('a[href]:not([target="_blank"]):not([href^="#"]):not([href="mailto:"]):not([href="tel:"])');
-
-    pageLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the browser from navigating immediately
-            const destination = this.href;
-
-            // Apply the fade-out class to the current page
-            document.body.classList.add('page-transition-out');
-            document.body.classList.remove('page-transition-in');
-
-            // Wait for the animation to finish, then navigate
-            setTimeout(function() {
-                window.location.href = destination;
-            }, 500); // The timeout duration should match the CSS animation duration (0.5s)
-        });
-    });
-});
-
-// Add this new block of code to your script.js file
-
-// Listen for the pageshow event, which fires when a page is loaded from the cache
-window.addEventListener('pageshow', function(event) {
-    // Check if the page is being loaded from the back-forward cache
-    if (event.persisted) {
-        // If it is, re-apply the page-transition-in class to trigger the fade-in animation
-        document.body.classList.remove('page-transition-out');
-        document.body.classList.add('page-transition-in');
-    }
-});
