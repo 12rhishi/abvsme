@@ -8,7 +8,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="style.css"></noscript>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
@@ -281,7 +282,8 @@
 
     <main>
         <section id="hero-carousel" class="relative h-screen flex items-center justify-center text-white text-center overflow-hidden">
-            <img id="hero-image" alt="Campus Life" class="hero-image absolute inset-0 w-full h-full object-cover">
+       <img id="hero-image" src="Images/hero/abvsme_cover.png" alt="Campus Life" class="hero-image absolute inset-0 w-full h-full object-cover" fetchpriority="high">
+
 
             <div class="hero-overlay absolute inset-0"></div>
             <div class="relative z-10 p-6 max-w-4xl mx-auto">
@@ -482,4 +484,5 @@ The Atal Bihari Vajpayee School of Management and Entrepreneurship in JNU will c
     <script src="Js/index-script.js" defer></script>
 
 </body>
+
 </html>
