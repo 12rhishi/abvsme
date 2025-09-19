@@ -451,27 +451,3 @@ html{
   thead tr {
     background-color: #f2f2f2;
   }
-
-/* Add to your style.css file */
-
-/* Keyframes for a smooth fade-in animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Keyframes for a smooth fade-out animation */
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-/* Apply the fade-in animation to the body when the page loads */
-body.page-transition-in {
-    animation: fadeIn 0.5s ease-in-out forwards;
-}
-
-/* Apply the fade-out animation when a user clicks a link */
-body.page-transition-out {
-    animation: fadeOut 0.5s ease-in-out forwards;
-}
