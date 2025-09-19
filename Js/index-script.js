@@ -4,7 +4,6 @@ const heroImage = document.getElementById('hero-image');
 const heroDotsContainer = document.getElementById('hero-dots-container');
 
 const heroImages = [
-    'Images/hero/abvsme_cover.png',
     'Images/hero/2.jpg',
     'Images/hero/3.jpg',
     'Images/hero/4.jpg',
@@ -292,3 +291,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     populateUpwardTicker();
 });
+
