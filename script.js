@@ -606,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function() {
             { name: 'Prof. Krishnendu Ghosh Dastidar', image: 'Images/Faculty/Associated_Faculty/dastidar-photo.jpg', emails: ['krishnendu.dastidar@gmail.com', 'kgd0302@mail.jnu.ac.in', 'kgd12@yahoo.com'], ProfileUrl: 'https://www.jnu.ac.in/content/kgd0302' },
             { name: 'Prof. Madhav Govind', image: 'Images/Faculty/Associated_Faculty/Madhav Govind.png', emails: ['m_govind@mail.jnu.ac.in', 'mgovind11@gmail.com'], ProfileUrl: 'https://www.jnu.ac.in/content/m_govind' },
             { name: 'Prof. Milap Punia', image: 'Images/Faculty/Associated_Faculty/mpunia.jpg', emails: ['punia@mail.jnu.ac.in', 'milap.jnu@gmail.com'], ProfileUrl: 'https://www.jnu.ac.in/content/punia' },
-            { name: 'Prof. P.K. Joshi', image: 'Images/Faculty/Associated_Faculty/PKJoshi.jpg', emails: ['pkjoshi@mail.jnu.ac.in', 'pkjoshi27@hotmail.com'], ProfileUrl: 'https://www.jnu.ac.in/content/pkjoshi' },
+            { name: 'Prof. P.K. Joshi', image: 'Images/Faculty/Associated_Faculty/pkjoshi.jpg', emails: ['pkjoshi@mail.jnu.ac.in', 'pkjoshi27@hotmail.com'], ProfileUrl: 'https://www.jnu.ac.in/content/pkjoshi' },
             { name: 'Prof. Paulraj Rajamani', image: 'Images/Faculty/Associated_Faculty/prajamani.jpg', emails: ['paulrajr@mail.jnu.ac.in'], ProfileUrl: 'https://www.jnu.ac.in/content/paulrajr' },
             { name: 'Prof. Pradipta K. Chaudhury', image: 'Images/Faculty/Associated_Faculty/pradipta.jpg', emails: ['pradipta@mail.jnu.ac.in'] },
             { name: 'Prof. Ravikesh', image: 'Images/Faculty/Associated_Faculty/ravikesh.png', emails: ['ravikesh@mail.jnu.ac.in', 'ravikesh@gmail.com'], ProfileUrl: 'https://www.jnu.ac.in/content/ravikesh' },
@@ -904,4 +904,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Call the function to populate the former deans section
     populateFormerDeans('Former-Dean-container', formerDeansData);
+
 });
